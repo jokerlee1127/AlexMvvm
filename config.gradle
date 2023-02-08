@@ -1,0 +1,12 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 33,
+            applicationId    : "com.ly",
+            minSdkVersion    : 24,
+            targetSdkVersion : 33,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+
+}
