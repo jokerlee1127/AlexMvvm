@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.ly.module_main'
-    compileSdk rootProject.ext.android.compileSdkVersion
+    namespace 'com.ly.common'
+    compileSdk 33
 
     defaultConfig {
-        minSdk rootProject.ext.android.minSdkVersion
-        targetSdk rootProject.ext.android.compileSdkVersion
+        minSdk 24
+        targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -28,13 +28,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
 
+    api rootProject.ext.dependencies["arouter-api"]
     implementation rootProject.ext.support["appcompat-v7"]
     implementation rootProject.ext.support["design"]
     implementation rootProject.ext.dependencies.constraintlayout

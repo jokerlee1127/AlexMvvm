@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "AlexMvvm"
 include ':app'
 include ':module_main'
+include ':base_frame'

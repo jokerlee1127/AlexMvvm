@@ -1,4 +1,4 @@
-package com.ly.alexmvvm
+package com.ly.common
 
 import org.junit.Test
 

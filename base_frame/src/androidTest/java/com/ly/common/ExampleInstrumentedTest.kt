@@ -1,4 +1,4 @@
-package com.ly.module_main
+package com.ly.common
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.ly.module_main.test", appContext.packageName)
+        assertEquals("com.ly.common.test", appContext.packageName)
     }
 }
