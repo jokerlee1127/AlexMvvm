@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.ly.module_main'
+    namespace 'com.ly.base_module'
     compileSdk rootProject.ext.android.compileSdkVersion
 
     defaultConfig {
@@ -28,13 +28,21 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    api project(':base_module')
-    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.support["appcompat-v7"]
+
+    //network
+    api rootProject.ext.dependencies.okhttp
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies["converter-gson"]
+    api rootProject.ext.dependencies["adapter-rxjava"]
+    api rootProject.ext.dependencies["logging-interceptor"]
+
+    //json解析
+    api rootProject.ext.dependencies.gson
+    api project(':base_frame')
+
 }
