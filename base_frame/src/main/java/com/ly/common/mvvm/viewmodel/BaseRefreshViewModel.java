@@ -6,10 +6,11 @@ import androidx.annotation.NonNull;
 import androidx.databinding.ObservableArrayList;
 import androidx.databinding.ObservableField;
 
-import com.dp.common.binding.command.BindingAction;
-import com.dp.common.binding.command.BindingCommand;
-import com.dp.common.mvvm.livedata.SingleLiveData;
-import com.dp.common.mvvm.model.BaseModel;
+import com.ly.common.binding.command.BindingAction;
+import com.ly.common.binding.command.BindingCommand;
+import com.ly.common.mvvm.livedata.SingleLiveData;
+import com.ly.common.mvvm.model.BaseModel;
+
 
 /**
  * Description: <BaseRefreshViewModel><br>

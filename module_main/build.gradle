@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
+apply from: "../module.build.gradle"
 
 android {
     namespace 'com.ly.module_main'

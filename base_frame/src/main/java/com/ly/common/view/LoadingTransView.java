@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.ly.common.R;
 
+
 /**
  * Description: <LoadingView><br>
  * Author:      mxdl<br>

@@ -9,7 +9,6 @@ import androidx.annotation.ColorRes;
 
 import com.ly.common.R;
 
-
 /**
  * Description: <LoadingView><br>
  * Author:      mxdl<br>
