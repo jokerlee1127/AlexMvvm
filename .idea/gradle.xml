@@ -14,7 +14,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base_frame" />
             <option value="$PROJECT_DIR$/base_module" />
+            <option value="$PROJECT_DIR$/module_home" />
             <option value="$PROJECT_DIR$/module_main" />
+            <option value="$PROJECT_DIR$/module_message" />
+            <option value="$PROJECT_DIR$/module_mine" />
+            <option value="$PROJECT_DIR$/module_square" />
           </set>
         </option>
       </GradleProjectSettings>

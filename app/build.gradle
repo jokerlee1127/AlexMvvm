@@ -30,7 +30,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
-        viewBinding true
+        dataBinding = true
     }
 }
 
@@ -43,9 +43,9 @@ dependencies {
 
     if (!isModule.toBoolean()) {
         implementation project(':module_main')
-//        implementation project(':module_mine')
-//        implementation project(':module_message')
-//        implementation project(':module_square')
-//        implementation project(':module_home')
+        implementation project(':module_mine')
+        implementation project(':module_message')
+        implementation project(':module_square')
+        implementation project(':module_home')
     }
 }

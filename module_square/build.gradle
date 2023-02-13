@@ -1,0 +1,13 @@
+apply from: "../module.build.gradle"
+android {
+    defaultConfig {
+        if (isModule.toBoolean()) {
+            applicationId "com.dp.square"
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':base_module')
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+}

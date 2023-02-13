@@ -1,0 +1,21 @@
+apply from: "../module.build.gradle"
+
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (isModule.toBoolean()) {
+            applicationId "com.dp.mine"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':base_module')
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+
+}

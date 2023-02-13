@@ -1,0 +1,18 @@
+apply from: "../module.build.gradle"
+android {
+    defaultConfig {
+        if (isModule.toBoolean()) {
+            applicationId "com.dp.home"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':base_module')
+
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+}
