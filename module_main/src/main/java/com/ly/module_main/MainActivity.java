@@ -1,5 +1,6 @@
 package com.ly.module_main;
 
+import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -42,9 +43,11 @@ public class MainActivity extends BaseActivity {
     @Override
     public void initView() {
         BottomNavigationView navigation = findViewById(R.id.nav);
-        navigation.setOnItemReselectedListener(new NavigationBarView.OnItemReselectedListener() {
+
+        navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onNavigationItemReselected(@NonNull MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Log.e("sax", "onNavigationItemReselected: "+item );
 
 
                 int i = item.getItemId();
@@ -65,8 +68,14 @@ public class MainActivity extends BaseActivity {
                     mCurrFragment = mMineFragment;
 
                 }
+
+                return false;
             }
         });
+
+
+
+
 
         if (mHomeProvider != null) {
             mHomeFragment = mHomeProvider.getHomeFragment();
